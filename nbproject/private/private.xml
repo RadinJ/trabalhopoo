@@ -3,14 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/JOAO/Desktop/POO/Trabalho%20Final/src/trabalho/pkgfinal/Telas/CadastroEsta.java</file>
             <file>file:/C:/Users/JOAO/Desktop/POO/Trabalho%20Final/src/trabalho/pkgfinal/classes/Funcionario.java</file>
             <file>file:/C:/Users/JOAO/Desktop/POO/Trabalho%20Final/src/trabalho/pkgfinal/Telas/VisualizarEsta.java</file>
-            <file>file:/C:/Users/JOAO/Desktop/POO/Trabalho%20Final/src/trabalho/pkgfinal/classes/Estagiario.java</file>
             <file>file:/C:/Users/JOAO/Desktop/POO/Trabalho%20Final/src/trabalho/pkgfinal/Telas/Cadastro.java</file>
             <file>file:/C:/Users/JOAO/Desktop/POO/Trabalho%20Final/src/trabalho/pkgfinal/classes/Pessoa.java</file>
-            <file>file:/C:/Users/JOAO/Desktop/POO/Trabalho%20Final/src/trabalho/pkgfinal/Telas/VisualizarFunc.java</file>
+            <file>file:/C:/Users/JOAO/Desktop/POO/Trabalho%20Final/src/controller/ArquivoIO.java</file>
+            <file>file:/C:/Users/JOAO/Desktop/POO/Trabalho%20Final/src/trabalho/pkgfinal/classes/Peca.java</file>
+            <file>file:/C:/Users/JOAO/Desktop/POO/Trabalho%20Final/src/trabalho/pkgfinal/Telas/VisualizarMemoria.java</file>
+            <file>file:/C:/Users/JOAO/Desktop/POO/Trabalho%20Final/src/trabalho/pkgfinal/Telas/CadastroMemoria.java</file>
             <file>file:/C:/Users/JOAO/Desktop/POO/Trabalho%20Final/src/trabalho/pkgfinal/Telas/Main.java</file>
+            <file>file:/C:/Users/JOAO/Desktop/POO/Trabalho%20Final/src/trabalho/pkgfinal/classes/MemoriaRAM.java</file>
         </group>
     </open-files>
 </project-private>

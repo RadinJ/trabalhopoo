@@ -6,11 +6,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.Serializable;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import trabalho.pkgfinal.classes.Estagiario;
 import trabalho.pkgfinal.classes.Funcionario;
+import trabalho.pkgfinal.classes.MemoriaRAM;
 
 public class ArquivoIO {
     
@@ -80,6 +80,44 @@ public class ArquivoIO {
              
              arqIn.close();
              return esta;
+            
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(ArquivoIO.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException | ClassNotFoundException ex) {
+            Logger.getLogger(ArquivoIO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
+    }
+    
+    public void gravarMemo(MemoriaRAM memo){
+        
+        try {
+            String fileName = memo.getModelo();
+            FileOutputStream arq = new FileOutputStream(fileName+".db");
+            ObjectOutputStream obj = new ObjectOutputStream(arq);
+            obj.writeObject(memo);
+            arq.close();
+            
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(ArquivoIO.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(ArquivoIO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+    }
+    
+    public MemoriaRAM lerMemo(String fileName){
+        MemoriaRAM memo = new MemoriaRAM();
+        try {
+            FileInputStream arqIn = new FileInputStream(fileName+".db");
+            ObjectInputStream objIn = new ObjectInputStream(arqIn);
+            
+            
+             memo = (MemoriaRAM) objIn.readObject();
+             
+             arqIn.close();
+             return memo;
             
         } catch (FileNotFoundException ex) {
             Logger.getLogger(ArquivoIO.class.getName()).log(Level.SEVERE, null, ex);

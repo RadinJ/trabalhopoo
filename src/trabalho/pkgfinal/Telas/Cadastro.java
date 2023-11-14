@@ -187,7 +187,7 @@ public class Cadastro extends javax.swing.JFrame{
             txtRegistro.setText("");
             txtSalario.setText("");
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "ChimaSystem avisa!\n deu ruim");
+            JOptionPane.showMessageDialog(null, "Erro");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

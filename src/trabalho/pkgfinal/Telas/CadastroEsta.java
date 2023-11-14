@@ -186,7 +186,7 @@ public class CadastroEsta extends javax.swing.JFrame{
             txtBolsa.setText("");
             txtHoras.setText("");
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "ChimaSystem avisa!\n deu ruim");
+            JOptionPane.showMessageDialog(null, "Erro");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
